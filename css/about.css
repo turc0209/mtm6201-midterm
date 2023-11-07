@@ -1,0 +1,170 @@
+
+/* CSS BEGINS */
+* {
+    font-family: futura;
+    list-style-type: none;
+}
+body {
+    margin: 0 auto;
+}
+#nav {
+    margin: 0 auto;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    list-style-type: none;
+}
+header nav a {
+    text-decoration: none;
+    float: right;
+}
+header nav a:link,
+header nav a:visited {
+    color: white;
+    padding: 1em 1em;
+}
+header nav a:hover,
+header nav a:focus {
+
+    color: rgb(216, 216, 216);
+}
+
+header nav {
+    background-color: #F397B0;
+    margin: 0auto;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-family: futura;
+    font-size: 0.9rem;
+
+}
+
+.menu {
+    width: 100%;
+    padding: 0;
+}
+.logo-block {
+    width: 100px;
+    float: left;
+    padding-left: 20px;
+}
+.keep {
+    width: 120px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+/* Hides Skip-Links */
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+
+
+  
+/* Footer styling */
+footer .wrapper {
+    background-color: #404040;
+    font-family: futura;
+    color: white;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+    align-items: center;
+}
+footer li {
+    list-style-type: none;
+    margin-left: -40px;
+}
+footer li a {
+    text-decoration: none;
+}
+footer li a:link,
+footer li a:visited {
+    color: white;
+
+}
+footer li a:hover,
+footer li a:focus {
+
+    color: rgb(216, 216, 216);
+}
+/* Styles the contact section "keep me in the loop" in footer */
+.footer-contact {
+    padding-right: 20px;
+}
+.footer-contact input {
+    background-color: #404040;
+    color: white;
+    border: white solid 1px;
+    width: 275px;
+
+}
+.footer-contact button {
+    background-color: white;
+    color: #404040;
+    border: none;
+    padding: 1px 57px;
+    font-family: futura;
+    font-size: 0.7rem;
+    margin-right: 15px;
+}
+.footer-contact span {
+   font-size: 1rem;
+}
+.footer-contact li:nth-child(1) {
+    margin-bottom: 3px;
+}
+.logo-footer {
+    width: 100px;
+    padding-left: 20px;
+    margin-top: -80px;
+}
+.footer-menu {
+    margin-bottom: 0;
+}
+
+/* 2nd Footer Section */
+.footer-bottom {
+    color: #F397B0;
+    font-size: 0.6rem;
+}
+footer .footer-bottom {
+    background-color: #2d2d2d;
+    width: 100%;
+    height: 25px;
+}
+.footer-bottom small {
+    padding-left: 20px;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: #F397B0;
+    float: right;
+    font-size: 0.6rem;
+    padding-right: 6px;
+    padding-top: 4px;
+}
+
+/* Media Query for mobile */
+@media only screen and (max-width: 600px) {
+    .keep {
+      display: none;
+    }
+    footer .wrapper {
+        display: none;
+    }
+  }
