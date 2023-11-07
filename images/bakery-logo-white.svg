@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.27 119.09">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.5em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-family: BlackRavenPUO, 'Black Raven';
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-4 {
+        font-size: 40.41px;
+      }
+
+      .cls-2 {
+        font-size: 35.14px;
+      }
+
+      .cls-3, .cls-5 {
+        font-size: 56.23px;
+      }
+
+      .cls-5 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-7 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g class="cls-6">
+    <text class="cls-1" transform="translate(0 33.2) scale(.91 1)"><tspan x="0" y="0">T</tspan></text>
+    <text class="cls-4" transform="translate(25.08 33.2) scale(.91 1)"><tspan x="0" y="0">he</tspan></text>
+  </g>
+  <g class="cls-6">
+    <text class="cls-3" transform="translate(29.75 73.05) scale(.91 1)"><tspan x="0" y="0">LOOP!</tspan></text>
+    <text class="cls-5" transform="translate(29.75 73.05) scale(.91 1)"><tspan x="0" y="0">LOOP!</tspan></text>
+  </g>
+  <g class="cls-6">
+    <text class="cls-2" transform="translate(176.06 101.77) scale(.91 1)"><tspan x="0" y="0">Bakery</tspan></text>
+  </g>
+  <ellipse class="cls-7" cx="83.78" cy="65.04" rx="9.36" ry="6.72" transform="translate(-4.46 123.88) rotate(-71.52)"/>
+  <ellipse class="cls-7" cx="109.98" cy="67.5" rx="9.12" ry="7.27" transform="translate(15.65 155.56) rotate(-74.57)"/>
+</svg>
