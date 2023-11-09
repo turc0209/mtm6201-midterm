@@ -6,6 +6,7 @@
 }
 body {
     margin: 0 auto;
+    max-width: 1200px;
 }
 #nav {
     margin: 0 auto;
@@ -73,7 +74,29 @@ header nav {
   }
 
 
-  
+/* About Section */
+.about {
+    background-color: #FDFFD5;
+    padding: 25px;
+    margin: 25px;
+}
+.about h1 {
+    color: #F397B0;
+}
+.meet {
+    padding: 25px;
+
+}
+.meet h2 {
+    color: #75D9D2;
+    margin-top: 0;
+}
+.aya-portrait {
+    width: 100px;
+    border-radius: 15px;
+}
+.meet p {
+}
 /* Footer styling */
 footer .wrapper {
     background-color: #404040;

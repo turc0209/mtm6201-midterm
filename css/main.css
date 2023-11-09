@@ -6,6 +6,8 @@
 }
 body {
     margin: 0 auto;
+    max-width: 1200px;
+
 }
 #nav {
     margin: 0 auto;
@@ -39,17 +41,48 @@ header nav {
     flex-direction: row;
     font-family: futura;
     font-size: 0.9rem;
-
+    
 }
+/* top bar & footer bars allow for stretched nav bar while having a max width on the body tag */
+.top-bar {
+    background-color: #F397B0;
+    position: absolute;
+    height: 77.5px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+    left: 0px;
+}
+.footer-bar {
+    background-color: #404040;
+    position: absolute;
+    height: 171.5px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+    left: 0px;
+}
+.footer-bottom-bar {
+    background-color: #2d2d2d;
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+    left: 0px;
+}
+
 
 .menu {
     width: 100%;
     padding: 0;
+    max-width: 1200px;
 }
 .logo-block {
     width: 100px;
     float: left;
     padding-left: 20px;
+    max-width: 1200px;
 }
 .keep {
     width: 120px;
@@ -76,17 +109,39 @@ header nav {
 .spacer {
     height: 30px;
 }
-main {
-    background-image: url("images/bakery.jpeg");
+.bg-image {
+    width: 100%;
+    background-image: url("../images/bakery.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1200px;
 }
+
 /* Promo */
 .promo {
     margin: 0 75px;
-    padding: 50px;
     background-color: #FDFFD5;
     border-radius: 25px;
-    background-image: url("images/goods-board.jpeg");
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
 }
+.bakery-crop {
+    width: 400px;
+    border-radius: 10px;
+}
+.promo-image {
+    flex: 1;
+    flex-basis: auto;
+    max-width: 500px;
+}
+.promo-text {
+    flex: 2;
+    padding-left: 50px;
+    flex-basis: auto;
+}
+
 .promo h2 {
     color: #75D9D2;
     font-size: 0.8rem;
@@ -261,13 +316,22 @@ footer .footer-bottom {
     padding-right: 6px;
     padding-top: 4px;
 }
-
+@media only screen and (max-width: 800px) {
+    .treats {
+        flex-direction: column;
+    }
+    .products form {
+        flex-direction: column;
+    }
+    .products form input {
+        font-size: 2rem;
+}
 /* Media Query for mobile */
 @media only screen and (max-width: 600px) {
     .keep {
       display: none;
     }
-    footer .wrapper {
+    footer .wrapper, .footer-bar {
         display: none;
     }
   }

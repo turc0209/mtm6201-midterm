@@ -6,6 +6,7 @@
 }
 body {
     margin: 0 auto;
+    max-width: 1200px;
 }
 #nav {
     margin: 0 auto;
@@ -39,7 +40,6 @@ header nav {
     flex-direction: row;
     font-family: futura;
     font-size: 0.9rem;
-
 }
 
 .menu {
@@ -72,6 +72,41 @@ header nav {
     font-weight: bold;
   }
 
+/* Contact Page */
+.contact {
+    background-color: #FDFFD5;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px;
+}
+.contact h1 {
+    color: #F397B0;
+}
+.contact-form {
+    display: flex;
+    justify-content: center;
+    
+}
+.contact-form button {
+    background-color: #F397B0;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 200px;
+}
+
+.contact-form input {
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-form #message {
+    width: 100%;
+    height: 150px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+.contact-form ul {
+    padding-left: 0;
+}
 /* Footer styling */
 footer .wrapper {
     background-color: #404040;
