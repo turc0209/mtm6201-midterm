@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <title>Midterm - Aya Turchio</title>
 </head>
+
 <body>
     <ul class="skip-links">
         <li><a href="#nav">Skip to main nav</a></li>
         <li><a href="#main">Skip to main content</a></li>
       </ul>
-    <header>
+    <header role="banner">
             <div class="top-bar"></div>
-            <nav id="nav">
+            <nav id="nav" role="navigation">
                 <ul class="menu">
                     <li><img class="logo-block" src="images/bakery-logo-white.svg" alt="Logo"></li>
                     <li><a href="./contact.html">CONTACT</a></li>
@@ -25,29 +28,49 @@
                
             </nav>
     </header>
-    <main id="main">
+    <main id="main" role="main">
         <div class="bg-image">
             <div class="spacer"></div>
+            
             <div class="promo">
                 <div class="promo-image">
-                    <img class="bakery-crop" src="images/bakery-crop.jpeg" alt="Bakery Interior with menu and items">
+                    <img class="bakery-crop" 
+                    src="images/bakery-crop.jpeg"
+                    srcset="images/bakery-crop-zoom.jpeg 640w,
+                            images/bakery-crop.jpeg 1024w"
+                    sizes="(max-width: 640px) 300px,
+                            (max-width: 1024px) 800px"
+                    alt="Bakery Interior with menu and items">
                 </div>
                     <div class="promo-text">
-                    <img class="eyes-logo" src="images/eyes-logo.svg" alt="eyes logo">
-                    <h2>FRESH BAKED | HAPPINESS</h2>
-                    <h1>HAPPY <br>HOTCAKES</h1>
-                    <span class="blue-star"> &#9733 &#9733 &#9733 &#9733 </span><span class="grey-star">&#9734 92 Reviews</span>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nunc sapien, tincidunt et blandit quis, vehicula vel nisi. Quisque eget arcu nisl. Suspendisse quis nunc iaculis, dictum felis eu, laoreet augue. Aenean non lectus ac odio dignissim lobortis sed in nibh. Pellentesque fringilla lobortis congue. Phasellus at lobortis augue. </p>
-                    <button class="order">ORDER</button>
-                    <button class="explore">EXPLORE</button>
+                        <img class="eyes-logo" src="images/eyes-logo.svg" alt="eyes logo">
+                        <h2>FRESH BAKED | HAPPINESS</h2>
+                        <h1 role="heading">HAPPY <br>HOTCAKES</h1>
+                        <span class="blue-star"> &#9733 &#9733 &#9733 &#9733 </span><span class="grey-star">&#9734 92 Reviews</span>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nunc sapien, tincidunt et blandit quis, vehicula vel nisi. Quisque eget arcu nisl. Suspendisse quis nunc iaculis, dictum felis eu, laoreet augue. Aenean non lectus ac odio dignissim lobortis sed in nibh. Pellentesque fringilla lobortis congue. Phasellus at lobortis augue. </p>
+                        <button class="order">ORDER</button>
+                        <button class="explore">EXPLORE</button>
                 </div>
+                
+                    <div class="promo-text">
+                        <img class="eyes-logo" src="images/eyes-logo.svg" alt="eyes logo">
+                        <h2>FRESH BAKED | HAPPINESS</h2>
+                        <h1 role="heading">ANGRY <br>ANGELCAKE</h1>
+                        <span class="blue-star"> &#9733 &#9733 &#9733 &#9733 </span><span class="grey-star">&#9734 57 Reviews</span>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nunc sapien, tincidunt et blandit quis, vehicula vel nisi. Quisque eget arcu nisl. Suspendisse quis nunc iaculis, dictum felis eu, laoreet augue. Aenean non lectus ac odio dignissim lobortis sed in nibh. Pellentesque fringilla lobortis congue. Phasellus at lobortis augue. </p>
+                        <button class="order">ORDER</button>
+                        <button class="explore">EXPLORE</button>
+                    </div>
+                    <div class="promo-image">
+                        <img class="bakery-crop" src="images/bakery-angle.jpeg" alt="Interior photo of the bakery at an angle">
+                    </div>
             </div>
             <div class="products">
                 <form action="form-page" method="post">
                         <input type="text" id="location" name="location"/>
                         <button>FIND LOCATION</button>
                 </form>
-                <h2>TREATS FOR EVERY MOOD</h2>
+                <h2 role="heading">TREATS FOR EVERY MOOD</h2>
                 <div class="treats">
                     
                     <div class="treat-card">
@@ -82,14 +105,17 @@
             </div>
         </div>
     </main>
-    <footer>
+    
+    <footer role="contentinfo">
         <div class="footer-container">
             <div class="footer-bar"></div>
             <div class="wrapper">
                 <img class="logo-footer" src="images/bakery-logo-white.svg" alt="Logo">
-                <p>130 Elgin St. <br>
-                    Ottawa, ON <br>
-                    (613) 613-6133</p>
+                    <ul itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <li itemprop="streetAddress">130 Elgin St. </li>
+                    <li itemprop="addressLocality">Ottawa, ON </li>
+                    <li itemprop="phoneNumber">(613) 613-6133</li>
+                    </ul>
                     <ul class="footer-menu">
                         <li><a href="./index.html">HOME</a></li>
                         <li><a href="./about.html">ABOUT</a></li>
@@ -120,7 +146,7 @@
             </div>
                 <div class="footer-bottom-bar"></div>
                 <div class="footer-bottom">
-                <small>&copy;Aya Turchio, 2023</small>
+                <small>&copy;Aya Turchio, 2023. Photos from Adobe Stock</small>
                 <a href="#">Privacy Policy</a>
                 <a href="#">&bull;</a>
                 <a href="#">Terms of Service</a>
