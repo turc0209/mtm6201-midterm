@@ -1,96 +1,117 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://use.typekit.net/zst3dai.css">
     <title>Midterm - Aya Turchio</title>
 </head>
+
 <body>
     <ul class="skip-links">
         <li><a href="#nav">Skip to main nav</a></li>
         <li><a href="#main">Skip to main content</a></li>
       </ul>
-    <header>
-            <nav id="nav">
+    <header role="banner">
+            <div class="top-bar"></div>
+            <nav id="nav" role="navigation">
                 <ul class="menu">
-                    <li><img class="logo-block" src="images/bakery-logo-white.svg" alt="Logo"></li>
+                    <li><img class="logo-block" src="images/bakery-logo-white.png" alt="Logo"></li>
                     <li><a href="./contact.html">CONTACT</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./index.html">HOME</a></li>
-                <li><img class="keep" src="images/keep-me-in-the-loop.svg" alt="keep-me-in-the-loop"></li>
+                    <li><img class="keep" src="images/keep-me-in-the-loop.png" alt="keep-me-in-the-loop"></li>
                 </ul>
                
             </nav>
     </header>
-    <main id="main">
+    <main id="main" role="main"> 
+
         <div class="spacer"></div>
         <div class="contact">
-            <h1>KEEP ME IN THE LOOP.</h1>
-            <p>Donec a fringilla tellus, sit amet volutpat ex. Praesent consectetur urna mi, a malesuada orci finibus sit amet. Etiam nibh nulla, vulputate vel augue nec, bibendum condimentum nulla. Cras quis dui eget nulla facilisis gravida. Maecenas at dolor nisi. Etiam a porta odio.</p>
-            <form class="contact-form" action="form-page" method="post">
-                <ul>
-                  <li>
-
-                    <input type="text" id="name" name="user_name" placeholder="Name"/>
-                  </li>
-                  <li>
-                    <input type="email" id="mail" name="user_email" placeholder="Email"/>
-                  </li>
-                  <li>
-                    <textarea id="message" name="message" placeholder="Message"></textarea>
-                  </li>
-                  <li>
-                    <button>SUBMIT</button>
-                  </li>
-                </ul>
-              </form>
+          <h2>KEEP ME IN THE LOOP.</h2>
+                        <p>Get promo codes and newsletters directly to your inbox! <br>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, quo rem animi mollitia eveniet accusantium consequatur ad accusamus eius perferendis nulla nam iure. Maiores, aperiam in ex odio dolore quis?
+                        </p>
+                        <img class="eyes-logo" src="images/eyes-logo.png" alt="eyes logo">
+                        <form action="form-page" method="post">
+                            <ul>
+                                <li>
+                                    
+                                    <input type="text" id="name" name="user_name" placeholder="Name"/>
+                                </li>
+                                <li>
+                                    <input type="email" id="mail" name="user_email" placeholder="Email"/>
+                                </li>
+                                <li>
+                                    <textarea id="message">Message</textarea>
+                                </li>
+                                <li>
+                                    <button>SUBMIT</button>
+                                </li>
+                            </ul>
+                        </form>
         </div>
+          
     </main>
-    <footer>
-        <div class="wrapper">
-            <img class="logo-footer" src="images/bakery-logo-white.svg" alt="Logo">
-            <p>130 Elgin St. <br>
-                Ottawa, ON <br>
-                (613) 613-6133</p>
-            <ul class="footer-menu">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-            <div class="footer-contact">
-                <h2>KEEP ME IN THE LOOP.</h2>
-                <p>Get promo codes and newsletters directly to your inbox!</p>
-                <form action="form-page" method="post">
-                    <ul>
-                      <li>
-
-                        <input type="text" id="name" name="user_name" placeholder="Name"/>
-                      </li>
-                      <li>
-                        <input type="email" id="mail" name="user_email" placeholder="Email"/>
-                      </li>
-                      <li>
-                        <button>SUBMIT</button><span class="material-symbols-outlined">
-                            globe kid_star extension alarm
-                            </span>
-                      </li>
+    
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-bar"></div>
+            <div class="wrapper">
+                <img class="logo-footer" src="images/bakery-logo-white.png" alt="Logo">
+                    <ul itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <li itemprop="streetAddress">130 Elgin St. </li>
+                    <li itemprop="addressLocality">Ottawa, ON </li>
+                    <li itemprop="phoneNumber">(613) 613-6133</li>
                     </ul>
-                  </form>
-                  
+                    <ul class="footer-menu">
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                    <div class="footer-contact">
+                        <h2>KEEP ME IN THE LOOP.</h2>
+                        <p>Get promo codes and newsletters directly to your inbox!</p>
+                        <form action="form-page" method="post">
+                            <ul>
+                                <li>
+                                    
+                                    <input type="text" id="name" name="user_name" placeholder="Name"/>
+                                </li>
+                                <li>
+                                    <input type="email" id="mail" name="user_email" placeholder="Email"/>
+                                </li>
+                                <li>
+                                    <button>SUBMIT</button><span class="material-symbols-outlined">
+                                        globe kid_star extension alarm
+                                    </span>
+                                </li>
+                            </ul>
+                        </form>
+                        
+                    </div>
+                </div>
             </div>
-        </div>
-            <div class="footer-bottom">
-                <small>&copy;Aya Turchio, 2023</small>
+                <div class="footer-bottom-bar"></div>
+                <div class="footer-bottom">
+                <small>&copy;Aya Turchio, 2023. Photos from Adobe Stock</small>
                 <a href="#">Privacy Policy</a>
                 <a href="#">&bull;</a>
                 <a href="#">Terms of Service</a>
-            </div>
+                </div>
           
         
       </footer>
 </body>
 </html>
+
+
+
+    
 
 

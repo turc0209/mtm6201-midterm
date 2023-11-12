@@ -169,15 +169,17 @@ header nav {
   .promo-one h1, .promo-two h1 {
     color: #f397b0;
     font-size: 3.7rem;
-    margin-top: 0px;
+    margin: 0px;
     font-weight: 900;
 
   }
   .blue-star {
     color: #75d9d2;
+    font-size: 1.2rem;
   }
   .grey-star {
     color: #afafaf;
+    font-size: 1.2rem;
   }
   
   .eyes-logo {
@@ -247,6 +249,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
+
 }
 .treats img {
     height: 75px;
@@ -254,7 +257,7 @@ header nav {
     border-radius: 8px;
 }
 .treats h3 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: #404040;
 }
 .treats small {
@@ -321,10 +324,15 @@ footer li a:focus {
 .footer-contact li:nth-child(1) {
     margin-bottom: 3px;
 }
+.footer-contact h2 {
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 10px 0;
+}
 .logo-footer {
-    width: 100px;
+    width: 150px;
     padding-left: 20px;
-    margin-top: -80px;
+    margin-top: -60px;
 }
 .footer-menu {
     margin-bottom: 0;
@@ -367,7 +375,13 @@ button:hover {
     .treats {
         flex-direction: column;
     }
- 
+    .promo-one, .promo-two {
+        flex-direction: column;
+        margin: 5px;
+    }
+    .bakery-crop, .bakery-angle {
+        border-radius: 5px;
+    }
     .products form {
         flex-direction: column;
     }
